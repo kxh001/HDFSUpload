@@ -1,11 +1,14 @@
 # CS226 Assignment1
 
-## Use the hadoop command to excute the program:
+## Building the project
+`$ mvn package`
+
+## Use the hadoop command to execute the program
 ```sh
-$ hadoop jar <jar_file_location> edu.ucr.cs.cs226.xkong016.HDFSUpload <source_file_path> <target_file_path>
+$ hadoop jar <jar_file_path> edu.ucr.cs.cs226.xkong016.HDFSUpload <source_file_path> <target_file_path>
 ```
 
-## File Path:
-`local file: file:/// + the absolute path of the file`
+### Valid File Path:
+1. `local file: file:/// + the absolute path of the local file`
 
-`HDFS fileL: hdfs:// + the absolute path of the file`
+2. `HDFS fileL: hdfs:// + the absolute path of the HDFS file`
